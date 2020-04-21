@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"mqtt\startup_stm32f103xb.o"
+"mqtt\system_stm32f1xx.o"
+"mqtt\stm32f1xx_hal_rcc.o"
+"mqtt\stm32f1xx_hal_tim.o"
+"mqtt\stm32f1xx_hal_flash_ex.o"
+"mqtt\stm32f1xx_hal_uart.o"
+"mqtt\stm32f1xx_hal_gpio.o"
+"mqtt\stm32f1xx_hal_cortex.o"
+"mqtt\stm32f1xx_hal_dma.o"
+"mqtt\stm32f1xx_hal_flash.o"
+"mqtt\stm32f1xx_hal.o"
+"mqtt\stm32f1xx_hal_pwr.o"
+"mqtt\stm32f1xx_hal_tim_ex.o"
+"mqtt\stm32f1xx_hal_gpio_ex.o"
+"mqtt\stm32f1xx_hal_rcc_ex.o"
+"mqtt\main.o"
+"mqtt\stm32f1xx_hal_msp.o"
+"mqtt\stm32f1xx_it.o"
+--library_type=microlib --strict --scatter "MQTT\MQTT.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MQTT.map" -o MQTT\MQTT.axf
